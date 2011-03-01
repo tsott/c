@@ -1,31 +1,41 @@
+//Napisac program liczacy wyznacznik macierzy kwadratowej
+
 #include <stdio.h>
-#include <math.h>
- 
-int main() {
-  float pierwiastek, poczatek, koniec, krok, temp;
-  printf("Podaj wartość początkową, konćową oraz krok do argumentu : ");
-  scanf("%f %f %f", &poczatek, &koniec, &krok);
 
-  if (poczatek > koniec) {
-temp = poczatek;
-poczatek = koniec;
-koniec = temp;
+float det(int n, float a[n][n]){
+int i, j, k, l,znak;
+float wyn=0;
+if(n==1)
+return a[0][0];
+    else{
+        for(i=0; i<n; i++){
+float b[n-1][n-1]:
+        for(j=1; j<n; j++){
+        for(k=0,l=0; k<n;k++){
+        if(k!=i){
+        b[j-1][l]=a[j][k];
+        l++;
+            }
+            }
+            }
+znak=1;
+if(i%2==1)
+znak=-1;
+wyn+=a[0][i]*znak*det(n-1, b);
 }
-  if(krok < 0) krok *= -1.0;
-
-  while(poczatek <= koniec){
-if(poczatek < 0) {
-printf(" %.4f brak\n", poczatek);
-}else {
-
-pierwiastek = sqrt(poczatek);
-printf(" %.4f %.4f\n", poczatek, pierwiastek);
+return wyn;
 }
-
-poczatek = poczatek + krok ;
 }
-
-  return 0;
+int main(){
+int n, i, j;
+ printf("Podaj rozmiar n macierzy kwadratowej:");
+scanf("%i", &n);
+float a[n][n];
+printf("\nPodaj elementy macierzy: ");
+for(i=0; i<n; i++)
+    for(j=0; j<n; j++)
+scanf("%f", &a[i][j]);
+printf("\nWyznacznik tej macierzy to: %f\n", det(n, a));
 }
 
 
