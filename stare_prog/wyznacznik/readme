@@ -1,0 +1,4 @@
+Nalezy kompilowac w ten sposob:
+gcc main.c wyznacznik.c wczytaj_dane.c
+
+
