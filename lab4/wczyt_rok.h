@@ -1,0 +1,1 @@
+int wczyt_rok();
