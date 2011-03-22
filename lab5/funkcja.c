@@ -12,7 +12,7 @@ void dane(void)
 
 void rownanie(void)
 {
-    x = a / b;
+    x = b / a;
 }
 
 void wynik(void)
