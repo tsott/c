@@ -4,9 +4,9 @@ float a, b, x;
 void dane(void)
 {
 	printf("Rownanie: a*x=b\n podaj parametry rownania\n");
-    printf("a= ");
+    printf("a= \n");
     scanf("%f", &a);
-    printf("b= ");
+    printf("b= \n");
     scanf("%f", &b);
 }
 
