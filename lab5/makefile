@@ -2,7 +2,7 @@ CFLAGS = -Wall
 
 all: compile link test clean
 
-compile : main.c funkcja.c helpers.h
+compile : main.c funkcja.c funkcja.h
 		gcc -c main.c funkcja.c
 		
 link: main.o funkcja.o
