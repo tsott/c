@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include "helpers.h"
+#include "funkcja.h"
 
 int main()
 {

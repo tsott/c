@@ -1,6 +1,9 @@
 #include<stdio.h>
 
-float a, b, x;
+float a;
+float b;
+float x;
+
 void dane(void)
 {
 	printf("Rownanie: a*x=b\n podaj parametry rownania\n");
