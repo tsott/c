@@ -10,5 +10,3 @@ void tankowanie(unsigned int ui, double x, double y, int i);
 void podsumowanie(unsigned int km, double litr, double koszt, double cena, int i);
 
 void przetworz(FILE ** in_handle);
-
-
