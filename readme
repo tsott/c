@@ -1,6 +1,0 @@
-1. Powstaną pliki z rozszerzeniem .o .
-2. Tak, jest konieczne istnienie pliku biblioteka.c ponieważ inaczej wywali błąd
-3. brak zmian po dodaniu pliku definicje.h 
-4. Wydając polecenie gcc -o program glowny.o biblioteka.o kompilator łączy pliki w 1 plik o nazwie program. Źródła nie są wymagane do łączenia plików .o .
-5-9. Zadania od 5 - 9 znajduja sie w plikach
-
